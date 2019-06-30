@@ -1,0 +1,25 @@
+{
+    "name": "vscode-tabby-lang",
+    "displayName": "vscode-tabby-lang",
+    "description": "",
+    "version": "0.0.1",
+    "engines": {
+        "vscode": "^1.35.0"
+    },
+    "categories": [
+        "Programming Languages"
+    ],
+    "contributes": {
+        "languages": [{
+            "id": "tabby",
+            "aliases": ["Tabby-Lang", "tabby"],
+            "extensions": [".tby"],
+            "configuration": "./language-configuration.json"
+        }],
+        "grammars": [{
+            "language": "tabby",
+            "scopeName": "source.tby",
+            "path": "./syntaxes/tabby.tmLanguage.json"
+        }]
+    }
+}
